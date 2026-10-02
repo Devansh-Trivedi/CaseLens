@@ -1,0 +1,3 @@
+# Optional fallback for macOS background sessions and non-macOS machines.
+# Requires Python >=3.6,<3.13; use Python 3.12 for the isolated OCR environment.
+rapidocr-onnxruntime==1.4.4

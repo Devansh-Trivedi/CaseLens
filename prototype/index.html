@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archived mockup — fictional sample data</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <p style="padding:20px;background:#fff0ce;color:#562a00;font-weight:bold">ARCHIVED MOCKUP — fictional sample data, not case evidence. <a href="http://127.0.0.1:8000/">Open the live CaseLens app.</a></p>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">◒</span> CaseLens</div>
+        <div class="matter"><span class="status-dot"></span><span>Sapini matter</span><span class="muted">·</span><span class="muted">Read-only intelligence</span></div>
+        <button class="button button-ghost">Share view</button>
+      </header>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">PERSONAL-INJURY CASE DIGEST</p>
+          <h1>Know what changed.<br /><em>Know what matters next.</em></h1>
+          <p class="lede">A clear, role-aware view of the Sapini case for the firm and the providers treating the client.</p>
+        </div>
+        <div class="hero-meta"><span class="label">LAST UPDATED</span><strong>Today, 8:42 AM</strong><span class="muted">312 records · 18 documents</span></div>
+      </section>
+
+      <nav class="tabs" aria-label="Views">
+        <button class="tab active" data-view="overview">Overview</button>
+        <button class="tab" data-view="timeline">Timeline</button>
+        <button class="tab" data-view="providers">Provider view</button>
+      </nav>
+
+      <section id="overview" class="view">
+        <div class="grid metrics">
+          <article class="card metric"><span class="label">CASE STATUS</span><strong>In treatment</strong><span class="trend blue">↑ 2 updates this week</span></article>
+          <article class="card metric"><span class="label">EST. CASE VALUE</span><strong>$180–220k</strong><span class="trend">Range based on current records</span></article>
+          <article class="card metric"><span class="label">COVERAGE SIGNAL</span><strong class="warning">Needs review</strong><span class="trend">Policy limits not confirmed</span></article>
+          <article class="card metric"><span class="label">NEXT DEADLINE</span><strong>Oct 14</strong><span class="trend">Provider records request</span></article>
+        </div>
+
+        <div class="grid main-grid">
+          <article class="card digest-card">
+            <div class="card-head"><div><p class="eyebrow">THE SHORT VERSION</p><h2>What happened</h2></div><span class="confidence">92% confidence</span></div>
+            <p class="summary">The client is continuing treatment for cervical and lumbar injuries after the collision. Recent records show improving mobility, but a new pain-management referral may extend the treatment timeline.</p>
+            <div class="signal-row"><span class="signal-icon blue-bg">↗</span><div><strong>New since your last review</strong><p>Physical therapy notes from Sep 26–30 and a provider request for updated policy information.</p></div></div>
+            <div class="signal-row"><span class="signal-icon amber-bg">!</span><div><strong>Worth your attention</strong><p>The medical-bill total increased by $8,420 this month; no corresponding settlement update is recorded.</p></div></div>
+          </article>
+
+          <article class="card activity-card"><div class="card-head"><div><p class="eyebrow">RECENT ACTIVITY</p><h2>Case pulse</h2></div><button class="text-button">View all</button></div><div id="activity-list" class="activity-list"></div></article>
+        </div>
+
+        <div class="grid lower-grid">
+          <article class="card"><div class="card-head"><div><p class="eyebrow">CASE MAP</p><h2>Where things stand</h2></div></div><div class="progress"><div class="progress-step done"><span>01</span><strong>Collision</strong><small>Jan 18</small></div><div class="progress-line done"></div><div class="progress-step done"><span>02</span><strong>Treatment</strong><small>Active</small></div><div class="progress-line"></div><div class="progress-step"><span>03</span><strong>Demand</strong><small>Not started</small></div><div class="progress-line"></div><div class="progress-step"><span>04</span><strong>Resolution</strong><small>Pending</small></div></div></article>
+          <article class="card"><div class="card-head"><div><p class="eyebrow">PEOPLE</p><h2>Key relationships</h2></div></div><div class="people"><div><span class="avatar purple">SA</span><div><strong>Sarah Sapini</strong><small>Client</small></div></div><div><span class="avatar teal">MR</span><div><strong>Dr. Maya Ruiz</strong><small>Primary provider</small></div></div><div><span class="avatar orange">JC</span><div><strong>James Chen</strong><small>Assigned attorney</small></div></div></div></article>
+        </div>
+      </section>
+
+      <section id="timeline" class="view hidden"><article class="card timeline-card"><p class="eyebrow">CASE TIMELINE</p><h2>Every important moment, in order.</h2><div id="timeline-list" class="timeline-list"></div></article></section>
+      <section id="providers" class="view hidden"><article class="card provider-card"><div class="provider-head"><div><p class="eyebrow">SHARED PROVIDER VIEW</p><h2>What providers need to know</h2><p class="muted">A focused view with case strategy and unrelated confidential information removed.</p></div><span class="privacy">Provider-safe</span></div><div class="provider-columns"><div><span class="label">SHARE</span><p>Current treatment status</p><p>Relevant bills and records</p><p>Upcoming deadlines</p><p>Questions for the care team</p></div><div><span class="label">DO NOT SHARE</span><p>Case strategy</p><p>Settlement discussions</p><p>Unrelated confidential notes</p></div></div></article></section>
+    </main>
+    <script src="../app.js"></script>
+  </body>
+</html>
